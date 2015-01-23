@@ -1,0 +1,17 @@
+/**
+ * Created by Favio on 22/01/2015.
+ */
+
+/**
+ * Created by Favio on 20/01/2015.
+ */
+
+function readMouseMove(e) {
+    var result_x = document.getElementById('x_result');
+    var result_y = document.getElementById('y_result');
+
+    result_x.innerHTML = e.clientX;
+    result_y.innerHTML = e.clientY;
+}
+
+document.onmousemove = readMouseMove;
