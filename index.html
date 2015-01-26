@@ -39,14 +39,14 @@
     //Click on image
     document.onclick = clickImg;
 
-    function clickImg (event) {
-        img.style.left = event.pageX - parseInt(img.width) / 2 + "px";
-        img.style.top = event.pageY - parseInt(img.height) / 2 + "px";
+    function clickImg (e) {
+        img.style.left = e.pageX - parseInt(img.width) / 2 + "px";
+        img.style.top = e.pageY - parseInt(img.height) / 2 + "px";
     }
 
-    img.onmousedown = function (event) {
+    img.onmousedown = function (e) {
         this.onmousemove = clickImg;
-        this.onmouseup = function (event) {
+        this.onmouseup = function (e) {
             this.onmousemove = null;
         };
     };
