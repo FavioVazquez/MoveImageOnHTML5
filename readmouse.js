@@ -1,8 +1,4 @@
 /**
- * Created by Favio on 22/01/2015.
- */
-
-/**
  * Created by Favio on 20/01/2015.
  */
 
